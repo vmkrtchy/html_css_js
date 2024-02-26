@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .intro-section {
+            height: 100vh;
+            background-image: url(https://marketplace.canva.com/EADaosozdz0/1/0/1600w/canva-purple-sky-profile-header-XBJ23wlhl0s.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .content-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .content-section h2 {
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background-color: #5a1c70;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #b31dea;
+        }
+
+        .about-me-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .about-me-content img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .about-me-details {
+            max-width: 600px;
+        }
+
+        .about-me-details p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        li:hover {
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        li:before {
+            color: #333;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #b31dea;
+        }
+
+        .fig {
+            display: inline-block;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .conact-form 
+        {
+            width: 500px;
+            padding: 20px;
+            margin: 50px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        .container 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #fff;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+  #          position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            background-color: #9000ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <header>
+            <div class="intro-section" id="home">
+                Welcome to My Site
+            </div>
+        </header>
+
+        <div class="content-section" id="about">
+            <h2>About Me</h2>
+            <div class="about-me-content">
+                <img src="https://resources.cdn.imdproc.am/b0cd1a17-dec4-4fb9-b294-e42679db8ad3/photomedium.jpg"
+                    alt="Yuri Mkrtchyan">
+                <div class="about-me-details">
+                    <p>My name is Yuri. I'm 22 years old and currently studying programming, specifically web
+                        programming. I was previously a student at 42 Yerevan, and now I am enrolled in TUMO Labs.
+                        Additionally, I enjoy playing frisbee in my free time.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section" id="volunteer-work">
+            <h2>Volunteer Work</h2>
+            <table>
+                <tr>
+                    <th>Organization</th>
+                    <th>Position</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Digitec</td>
+                    <td>(Summit, PR)</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Tumo Labs</td>
+                    <td>Volunteer</td>
+                    <td>October 2022 - December 2022</td>
+                </tr>
+                <tr>
+                    <td>Tumo Labs</td>
+                    <td>Coach</td>
+                    <td>June 2022</td>
+                </tr>
+                <tr>
+                    <td>NoBla!Bla Hackaton</td>
+                    <td>Technical Staff</td>
+                    <td>(Provide Date Range)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content-section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <a href="https://www.python.org" target="_blank">
+                    <li>Python</li>
+                </a>
+                <li>C/C++ (beginner)</li>
+                <li>Communication</li>
+                <a href="https://wordpress.com" target="_blank">
+                    <li>WordPress (beginner)</li>
+                </a>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>vim</li>
+                <li>bash</li>
+            </ul>
+        </div>
+        <div class="content-section" id="My videos">
+            <span style="margin: 10px;">
+                <h5>Its my video</h5>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z0tCyXZZrEM?si=eXQ3o0955uZ7ClrX"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </span>
+            <span style="margin: 10px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PDJDE9cfsnY?si=4tm7JXXraUzGIwJ5"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </span>
+
+            <H6>Is not my video</H6>
+            <span style="margin: 10px;">
+                <video controls="" width="560" height="315" type="video/webm">
+                    <source src="https://upload.wikimedia.org/wikipedia/commons/a/a7/How_to_make_video.webm">
+                </video>
+            </span>
+
+
+            <span style="margin: 10px;">
+                <video controls="" width="560" height="315" type="video/webm">
+                    <source src="https://upload.wikimedia.org/wikipedia/commons/a/a7/How_to_make_video.webm">
+                </video>
+            </span>
+        </div>
+    </div>
+
+    <div class="content-section" id="My_food">
+        <h4>What am I eating</h4>
+        <figure class="fig">
+            <img src="https://buy.am//media/image/ae/2b/ce/Pizza-Vicenza-Pizza-Di-Roma_200x200@2x.jpg" alt="Trulli"
+                width="560px" height="315px">
+            <figcaption>Պիցցա «Վիչենցա» Պիցցա Դի Ռոմա</figcaption>
+        </figure>
+        <figure class="fig">
+
+            <img src="https://i.ytimg.com/vi/1GNqe8XR0TA/hqdefault.jpg" alt="Trulli" width="560px" height="315px">
+            <figcaption>"Խինկալի" Վրացական խոհանոց</figcaption>
+        </figure>
+    </div>
+
+
+    <div class="content-section" id="contact">
+        <h2>Contact Me</h2>
+	<a href="tel:033332001">033332001</a><br>
+	<a href = "mailto:ymkrtchy@gmail.com">ymkrtchy@gmail.com</a>
+    </div>
+
+    <div class="contact-form">
+        <h2 style="text-align: center;">Contact Form</h2>
+        <form action="/submit-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="priority">Priority:</label>
+                <select id="priority" name="priority" required>
+                    <option value="low">Student</option>
+                    <option value="medium">Staff</option>
+                </select>
+            </div>
+            <div class="container" id="sub">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
+        <p>&copy; 2022 My Website. All rights reserved.</p>
+    </footer>
+    <script>
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
